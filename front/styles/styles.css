@@ -8,6 +8,7 @@
     justify-content: space-between;
     background-color: #1C1C21;
     color: white;
+    flex-wrap: wrap;
 }
 
 .imagen-logo{
@@ -28,8 +29,16 @@
     justify-content: flex-start;
 }
 
+.nav-inicio:hover{
+    background-color: #2F3037;
+}
+
 .nav-estreno{
     padding: 10px;
+}
+
+.nav-estreno:hover{
+    background-color: #2F3037;
 }
 
 .a-inicio, .a-estreno, .a-sobre-nosotros {
@@ -47,6 +56,10 @@
     display: flex;
     align-content: center;
     padding: 10px;
+}
+
+.nav-sobre-nosotros:hover{
+    background-color: #2F3037;
 }
 
 
@@ -91,22 +104,43 @@
     text-decoration: none;
 }
 
+.a-registrarse:hover{
+    background-color: #2F3037;
+}
+
 .seccion-peliculas{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding: 30px;
 }
 
 .pelicula{
     display: flex;
     flex-direction: column;
-    width: 200px;
-    height: 300px;
+    align-items: center;
+    width: 250px;
+    height: 400px;
     background-color: #2F3037;
     padding: 15px;
     border-radius: 5px;
-    margin-bottom: 20px;
     cursor:pointer;
+    color:white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 1em;
+}
+
+.pelicula:hover{
+    background-color: #1C1C21;
+    transition: 0.1s;
+    border: solid 3px #d9ddcd;
+}
+
+
+.imagen-peli {
+    width: 11em;
+    padding: 10px;
+    
 }
 
 .titulo-seccion-peliculas{
@@ -117,4 +151,13 @@
     margin-left:20px;
     margin-top:10px;
     line-height: 2em;
+}
+
+.descripcion-peli{
+    display:flex;
+    font-size: 0.8em;
+}
+
+.titulo-pelicula{
+    padding: 10px;
 }
