@@ -1,0 +1,120 @@
+.body{
+    background-color: #131316;
+}
+
+.header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #1C1C21;
+    color: white;
+}
+
+.imagen-logo{
+    width: 60px;
+    padding: 10px;
+    margin-left: 50px;
+}
+
+.navegador{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 14px;
+}
+
+.nav-inicio{
+    padding:10px;
+    justify-content: flex-start;
+}
+
+.nav-estreno{
+    padding: 10px;
+}
+
+.a-inicio, .a-estreno, .a-sobre-nosotros {
+    padding:10px;
+    display:flex;
+    align-content: center;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 1.1em;
+    color:white;
+    cursor:pointer;
+    text-decoration: none;
+}
+
+.nav-sobre-nosotros{
+    display: flex;
+    align-content: center;
+    padding: 10px;
+}
+
+
+.navegador-secundario{
+    display:flex;
+    flex-direction: row;
+    align-content: end;
+    margin-right: 10px;
+}
+
+.icono-login{
+   width: 5em;
+}
+
+.busqueda{
+    padding: 10px;
+    margin-top: 12px;
+}
+
+.input-busqueda{
+    width: 150px;
+    height: 30px;
+    border: solid 3px #5B5C62;
+}
+
+.usuario{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-top: 5px;
+}
+
+.a-registrarse {
+    padding:10px;
+    display:flex;
+    align-content: center;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 1.1em;
+    color:white;
+    cursor:pointer;
+    margin-top:18px;
+    text-decoration: none;
+}
+
+.seccion-peliculas{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.pelicula{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    background-color: #2F3037;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor:pointer;
+}
+
+.titulo-seccion-peliculas{
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 1.1em;
+    color: white;
+    padding:5px;
+    margin-left:20px;
+    margin-top:10px;
+    line-height: 2em;
+}
