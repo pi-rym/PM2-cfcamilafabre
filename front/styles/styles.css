@@ -1,6 +1,6 @@
 .body{
-    background-color: #131316;
-}
+     background: linear-gradient(#131316, #1C1C21);
+    }
 
 .header{
     display:flex;
@@ -12,7 +12,7 @@
 }
 
 .imagen-logo{
-    width: 60px;
+    width: 80px;
     padding: 10px;
     margin-left: 50px;
 }
@@ -21,7 +21,7 @@
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-top: 14px;
+    align-items: center;
 }
 
 .nav-inicio{
@@ -71,7 +71,7 @@
 }
 
 .icono-login{
-   width: 5em;
+   width: 3em;
 }
 
 .busqueda{
@@ -83,6 +83,7 @@
     width: 150px;
     height: 30px;
     border: solid 3px #5B5C62;
+    margin-top:7px;
 }
 
 .usuario{
@@ -96,11 +97,11 @@
     padding:10px;
     display:flex;
     align-content: center;
+    align-items: center;
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
     font-size: 1.1em;
     color:white;
     cursor:pointer;
-    margin-top:18px;
     text-decoration: none;
 }
 
@@ -119,8 +120,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 250px;
-    height: 400px;
+    width: 20em;
+    height: 27em;
     background-color: #2F3037;
     padding: 15px;
     border-radius: 5px;
@@ -138,12 +139,10 @@
 
 
 .imagen-peli {
-    width: 11em;
-    padding: 10px;
-    
+    width: 8.5em;
 }
 
-.titulo-seccion-peliculas{
+.titulo-seccion-peliculas, .h5-footer{
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
     font-size: 1.1em;
     color: white;
@@ -151,6 +150,15 @@
     margin-left:20px;
     margin-top:10px;
     line-height: 2em;
+    font-weight: bold;
+    
+}
+
+.h5-footer{
+    font-size:0.8em;
+    margin-top: 3px;
+    font-weight: normal;
+
 }
 
 .descripcion-peli{
@@ -159,5 +167,24 @@
 }
 
 .titulo-pelicula{
+    padding: 0.1em;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color:#131316;
     padding: 10px;
+}
+.imagen-contacto{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.contenedor-imagenes-footer{
+    display:flex;
+    flex-direction: row;
+    margin-left: 25px;
+    
 }
