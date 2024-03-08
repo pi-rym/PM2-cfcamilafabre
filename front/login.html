@@ -37,14 +37,27 @@
       </div>
     </div>
     <div class="navegador-secundario">
-      <div class="busqueda">
-        <input type="text" placeholder="Búsqueda" class="input-busqueda">
-      </div>
+      <form class="form-inline" id="formBusqueda">
+        <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
+      </form>
       <div class="usuario border-left border-dark">
-        <a href="./login.html" class="a-registrarse text-decoration-none"> <img src="./imagenes/icono-login.png" class="icono-login"> Registrarse</a>
+        <a href="./login.html" class="a-registrarse text-decoration-none"> <img src="./imagenes/icono-login.png" class="icono-login">Ingresar</a>
       </div>
     </div>
   </header>
+  <main class="container main-login">
+  <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Direccion de Email</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Direccion email">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Contraseña</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+    </div>
+    <button type="submit" class="btn btn-primary">Ingresar</button>
+  </form>
+</main>
   <footer class="footer">
     <h5 class="h5-footer">Contactate con nosotros</h3>
     <div class="contenedor-imagenes-footer">
