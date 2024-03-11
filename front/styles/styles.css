@@ -1,9 +1,9 @@
-.body{
-     background: linear-gradient(#131316, #1C1C21);
-    }
+.body {
+    background: linear-gradient(#131316, #1C1C21);
+}
 
-.header{
-    display:flex;
+.header {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: #1C1C21;
@@ -11,82 +11,84 @@
     flex-wrap: wrap;
 }
 
-.imagen-logo{
+.imagen-logo {
     width: 80px;
     padding: 10px;
     margin-left: 50px;
 }
 
-.navegador{
-    display:flex;
+.navegador {
+    display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }
 
-.nav-inicio{
-    padding:10px;
+.nav-inicio {
+    padding: 10px;
     justify-content: flex-start;
 }
 
-.nav-inicio:hover{
+.nav-inicio:hover {
     background-color: #2F3037;
 }
 
-.nav-estreno{
+.nav-estreno {
     padding: 10px;
 }
 
-.nav-estreno:hover{
+.nav-estreno:hover {
     background-color: #2F3037;
 }
 
-.a-inicio, .a-estreno, .a-sobre-nosotros {
-    padding:10px;
-    display:flex;
+.a-inicio,
+.a-estreno,
+.a-sobre-nosotros {
+    padding: 10px;
+    display: flex;
     align-content: center;
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
     font-size: 1.1em;
-    color:white;
-    cursor:pointer;
+    color: white;
+    cursor: pointer;
     text-decoration: none;
 }
 
-.nav-sobre-nosotros{
+.nav-sobre-nosotros {
     display: flex;
     align-content: center;
     padding: 10px;
 }
 
-.nav-sobre-nosotros:hover{
+.nav-sobre-nosotros:hover {
     background-color: #2F3037;
 }
 
 
-.navegador-secundario{
-    display:flex;
+.navegador-secundario {
+    display: flex;
     flex-direction: row;
     align-content: end;
     margin-right: 10px;
 }
 
-.icono-login{
-   width: 3em;
+.icono-login {
+    width: 3em;
 }
 
-.busqueda{
+.busqueda {
     padding: 10px;
     margin-top: 12px;
 }
 
-.input-busqueda{
+.input-busqueda {
     width: 150px;
     height: 30px;
     border: solid 3px #5B5C62;
-    margin-top:7px;
+    margin-top: 7px;
 }
 
-.usuario{
+.usuario {
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -94,29 +96,29 @@
 }
 
 .a-registrarse {
-    padding:10px;
-    display:flex;
+    padding: 10px;
+    display: flex;
     align-content: center;
     align-items: center;
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
     font-size: 1.1em;
-    color:white;
-    cursor:pointer;
+    color: white;
+    cursor: pointer;
     text-decoration: none;
 }
 
-.a-registrarse:hover{
+.a-registrarse:hover {
     background-color: #2F3037;
 }
 
-.seccion-peliculas{
+.seccion-peliculas {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 30px;
 }
 
-.pelicula{
+.pelicula {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,13 +127,13 @@
     background-color: #2F3037;
     padding: 15px;
     border-radius: 5px;
-    cursor:pointer;
-    color:white;
+    cursor: pointer;
+    color: white;
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
     font-size: 1em;
 }
 
-.pelicula:hover{
+.pelicula:hover {
     background-color: #1C1C21;
     transition: 0.1s;
     border: solid 3px #d9ddcd;
@@ -142,67 +144,72 @@
     width: 8.5em;
 }
 
-.titulo-seccion-peliculas, .h5-footer{
+.titulo-seccion-peliculas,
+.h5-footer {
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
     font-size: 1.1em;
     color: white;
-    padding:5px;
-    margin-left:20px;
-    margin-top:10px;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: 10px;
     line-height: 2em;
     font-weight: bold;
-    
+
 }
 
-.h5-footer{
-    font-size:0.8em;
+.h5-footer {
+    font-size: 0.8em;
     margin-top: 3px;
     font-weight: normal;
 
 }
 
-.descripcion-peli{
-    display:flex;
+.descripcion-peli {
+    display: flex;
     font-size: 0.8em;
 }
 
-.titulo-pelicula{
+.titulo-pelicula {
     padding: 0.1em;
 }
 
-.footer{
+.footer {
     display: flex;
-    flex-direction: column;
-    background-color:#131316;
+    justify-content: center;
+    background-color: #131316;
     padding: 10px;
 }
-.imagen-contacto{
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-}
 
-.contenedor-imagenes-footer{
-    display:flex;
+.ul-footer {
+    display: flex;
     flex-direction: row;
-    margin-left: 25px;
-    
+    margin-top: 8px;
 }
 
-.main-login{
+.imagen-contacto {
+    width: 2em;
+    height: 2em;
+    margin: 0.3em;
+}
+
+.h5-footer {
+    margin-top: 10px;
+}
+
+.main-login {
     width: 5em;
     margin: 5em;
 }
 
-#formBusqueda{
-    background-color:#1C1C21;
+#formBusqueda {
+    background-color: #1C1C21;
     margin-right: 1em;
 }
 
-.form-group{
-    color:white;
-    width:25em;
-    display:flex;
+.form-group {
+    color: white;
+    width: 25em;
+    display: flex;
     flex-direction: column;
     justify-content: center;
 }

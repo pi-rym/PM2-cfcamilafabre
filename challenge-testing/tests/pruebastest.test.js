@@ -7,6 +7,14 @@ describe('CarritoCompra', () => {
     carrito = new CarritoCompra();
   });
 
+  it ('CarritoCompra debe ser una clase', () => {
+    expect(typeof CarritoCompra.prototype.constructor).toBe('function');
+  });
+
+  it ('carrito deberia ser una instancia de la clase CarritoCompra', ()=> {
+    expect(carrito instanceof CarritoCompra).toBe(true);
+  });
+
   it ('agregarProducto agrega un producto al carrito', () => {
     carrito.agregarProducto({ nombre: 'Producto 1', precio: 10 });
     expect(carrito.productos.length).toBe(1);
