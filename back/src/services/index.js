@@ -1,1 +1,0 @@
-// aca voy a tener una funcion que se comunica con la base de datos para pedir la informacion y darle el formato adecuado
