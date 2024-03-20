@@ -228,6 +228,12 @@
     color: #5B5C62;
 }
 
+.titulo-estreno{
+    text-align: center;
+    margin: 20px;
+    color: #5B5C62;
+}
+
 .btn{
     margin:8px;
 }
@@ -246,4 +252,16 @@
 
 .form-control.invalid {
     border: 1px solid red;
+}
+
+.seccion-sn {
+    margin: 5px;
+    text-align: center;
+    color:#5B5C62;
+}
+
+.seccion-estreno{
+    margin: 5px;
+    text-align: center;
+    color:#5B5C62;
 }
