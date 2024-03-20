@@ -1,5 +1,5 @@
 const renderTarjetas = require("./renderTarjetas");
-const handleSubmit = require("./handleSubmit");
+const createMovie = require("./createMovie");
 const axios = require("axios");
 
 const getMovies = async () => {
@@ -11,40 +11,19 @@ const getMovies = async () => {
     }
 }
 
-getMovies();
-
-
-const resetButton = document.getElementById('resetButton');
+document.addEventListener("DOMContentLoaded", () => {
+    getMovies();
+    const submit = document.getElementById("movieForm");
+    submit?.addEventListener("submit", createMovie);
+});
 
 //Esta funcion se puede reemplazar utilizando el type="reset" en el button.
-resetButton.addEventListener('click', function() {
+const resetButton = document.getElementById('resetButton');
+
+resetButton.addEventListener('click', function () {
     const inputs = document.querySelectorAll('.seccion-form input')
-    inputs.forEach(function(input) {
+    inputs.forEach(function (input) {
         input.value = '';
     })
 });
 
-
-const sendButton = document.getElementById('sendButton');
-
-const form = document.querySelector('form');
-form.addEventListener('submit', handleSubmit);
-
-sendButton.addEventListener('click', function() {
-    const inputs = document.querySelectorAll('.seccion-form input')
-    let formIsValid = true;
-
-    inputs.forEach(function(input) {
-        if (input.value.trim() === '') {
-            formIsValid = false;
-            input.classList.add('invalid');
-        } else {
-            input.classList.remove('invalid');
-        }
-    });
-    if (formIsValid) {
-        handleSubmit();
-    } else {
-        alert('Por favor complete todos los campos.');
-    }
-});

@@ -129,6 +129,7 @@
     color: white;
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
     font-size: 1em;
+    margin: 5px;
 }
 
 .pelicula:hover {

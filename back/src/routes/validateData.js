@@ -1,6 +1,6 @@
 function validateData(req, res, next) {
-    const { titulo, director, año, genero, duracion, poster } = req.body;
-    if (!titulo || !director || !año || !genero || !duracion || !poster) {
+    const { title, director, year, genre, duration, poster, rate} = req.body;
+    if (!title || !director || !year || !genre || !duration || !poster || !rate) {
         return res.status(400).json({ message: 'Todos los campos son obligatorios' });
     }
     next();

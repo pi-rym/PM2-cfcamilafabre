@@ -22,7 +22,7 @@ function renderTarjetas(movie) {
     tarjetaPelicula.appendChild(descripcionPeli);
     tarjetaPelicula.appendChild(imagenPeli);
 
-    seccionPeliculas.appendChild(tarjetaPelicula);
+    seccionPeliculas?.appendChild(tarjetaPelicula);
 }
 
 module.exports = renderTarjetas;

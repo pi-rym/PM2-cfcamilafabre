@@ -14,9 +14,9 @@ module.exports = {
     },
 
     createMovie: async (req, res) => {
-        const { title, year, director, rate, duration, poster } = req.body;
+        const { title, year, director, duration, genre, rate, poster } = req.body;
         try {
-            const newMovie = await moviesServices.createMovie({ title, year, director, rate, duration, poster });
+            const newMovie = await moviesServices.createMovie({ title, year, director, duration, genre, rate, poster });
             res.status(201).json(newMovie);
         } catch (error) {
             res.status(500).json({ error: "Hubo un error al crear la pelicula." });
