@@ -231,3 +231,18 @@
     margin:8px;
 }
 
+.form-double-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    width:25rem;
+}
+
+.form-double-column .form-group {
+    width: 12rem;
+}
+
+.form-control.invalid {
+    border: 1px solid red;
+}

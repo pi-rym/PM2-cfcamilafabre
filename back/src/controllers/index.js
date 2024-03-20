@@ -1,18 +1,25 @@
-const getMovies = require("../services/moviesService");
-
-const moviesController = async (req, res) => {
-    try {
-        // Esperar la respuesta de la función getMovies
-        const movies = await getMovies();
-
-        // Enviar las películas como respuesta al cliente
-        res.status(200).json(movies);
-    } catch (error) {
-        // Manejar cualquier error que ocurra durante la obtención de las películas
-        res.status(500).json({ error: "Hubo un error al obtener las películas." });
-    }
-};
+const moviesServices = require("../services/moviesServices");
 
 module.exports = {
-    moviesController,
+    getMovies: async (req, res) => {
+        try {
+            // Esperar la respuesta de la función getMovies
+            const movies = await moviesServices.getMovies();
+            // Enviar las películas como respuesta al cliente
+            res.status(200).json(movies);
+        } catch (error) {
+            // Manejar cualquier error que ocurra durante la obtención de las películas
+            res.status(500).json({ error: "Hubo un error al obtener las películas." });
+        }
+    },
+
+    createMovie: async (req, res) => {
+        const { title, year, director, rate, duration, poster } = req.body;
+        try {
+            const newMovie = await moviesServices.createMovie({ title, year, director, rate, duration, poster });
+            res.status(201).json(newMovie);
+        } catch (error) {
+            res.status(500).json({ error: "Hubo un error al crear la pelicula." });
+        }
+    },
 };

@@ -53,37 +53,40 @@
             </div>
         </div>
     </header>
-    <section>
+    <section class="seccion-form">
         <h2 class="titulo-form">¡Es hora de crear tu propia pelicula!</h2>
         <form class="form-crear-peli form">
             <div class="form-group">
                 <label for="exampleInputEmail1">Titulo de la pelicula</label>
-                <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Titulo">
+                <input type="string" class="form-control" placeholder="Titulo">
             </div>
             <div class="form-group">
-                <label for="exampleInputPassword1">Director</label>
-                <input type="password" class="form-control" placeholder="Director">
+                <label for="directorInput">Director</label>
+                <input id="directorInput" type="string" class="form-control" placeholder="Director">
             </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Año</label>
-                <input type="password" class="form-control" placeholder="Año">
+            <div class="form-double-column">
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Año</label>
+                    <input type="number" class="form-control" placeholder="Año">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Genero</label>
+                    <input type="string" class="form-control" placeholder="Genero">
+                </div>
             </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Genero</label>
-                <input type="password" class="form-control" placeholder="Genero">
-            </div>
+           
             <div class="form-group">
                 <label for="exampleInputPassword1">Duración</label>
-                <input type="password" class="form-control" placeholder="Duración">
+                <input type="string" class="form-control" placeholder="Duración">
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Poster</label>
-                <input type="password" class="form-control" placeholder="Inserte URL">
+                <input type="url" class="form-control" placeholder="Inserte URL">
             </div>
             </div>
             <div class="botones">
-                <button type="submit" class="btn btn-primary">Reset</button>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="button" class="btn btn-primary" id="sendButton">Enviar</button>
+                <button type="button" class="btn btn-primary"  id="resetButton">Reset</button>
             </div>
         </form>
     </section>
