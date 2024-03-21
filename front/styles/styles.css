@@ -222,16 +222,10 @@
     align-items: center;
 }
 
-.titulo-form{
+.titulo-seccion{
     text-align: center;
     margin: 20px;
-    color: #5B5C62;
-}
-
-.titulo-estreno{
-    text-align: center;
-    margin: 20px;
-    color: #5B5C62;
+    color: #ccced6;
 }
 
 .btn{

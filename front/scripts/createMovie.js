@@ -1,4 +1,5 @@
 const validateForm = require("./validateForm");
+const resetForm = require("./resetForm");
 const axios = require("axios");
 
 function createMovie(event){
@@ -19,7 +20,9 @@ function createMovie(event){
 
     axios
     .post("http://localhost:3000/movies", newMovie)
-    .then(() => alert('Pelicula creada!'))
+    .then(() => {alert('Pelicula creada!')
+        resetForm();    
+})
     .catch((error) => alert('Error al crear la peli'));
 }
 

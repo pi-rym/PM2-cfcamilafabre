@@ -1,5 +1,6 @@
 const renderTarjetas = require("./renderTarjetas");
 const createMovie = require("./createMovie");
+const resetForm = require("./resetForm");
 const axios = require("axios");
 
 const getMovies = async () => {
@@ -19,11 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //Esta funcion se puede reemplazar utilizando el type="reset" en el button.
 const resetButton = document.getElementById('resetButton');
-
 resetButton.addEventListener('click', function () {
-    const inputs = document.querySelectorAll('.seccion-form input')
-    inputs.forEach(function (input) {
-        input.value = '';
-    })
+    resetForm();
 });
 
